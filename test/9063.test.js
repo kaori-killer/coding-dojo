@@ -9,10 +9,7 @@ const findHeigth = (array) => {
 };
 
 const solution = (n, array) => {
-    const width = findWidth(array);
-    const height = findHeigth(array);
-
-    return width * height;
+    return findWidth(array) * findHeigth(array);
 }
 
 test("대지 찾기", () => {
